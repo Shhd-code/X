@@ -1,1 +1,146 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local R={"\107\076\088\066\107\105\061\061","\080\097\073\085\054\097\068\061";"\117\097\088\066\080\097\117\065\102\120\116\109\053\097\117\110\053\097\117\048\102\105\061\061","\104\056\116\107\116\110\088\109\053\104\053\107\101\097\116\051";"\107\081\052\111\054\071\102\061";"\099\097\105\072\104\097\088\043\043\076\066\088\099\117\085\052","\069\090\109\070\107\105\061\061","\079\072\115\066\107\079\116\085\053\097\088\119\054\097\104\061","\080\071\116\065\101\049\057\090","\043\081\072\089\054\087\103\076\099\081\115\081\087\087\107\055\087\105\061\061";"\053\049\057\068\069\049\073\067";"\054\056\120\061","\043\113\116\070\080\120\053\109\053\103\061\061";"\079\072\115\118\054\081\116\109\112\103\061\061","\080\081\088\051\107\097\115\066","\080\076\117\070\054\049\117\070\069\079\116\085\069\081\052\109","\079\072\115\083\107\049\055\061";"\069\076\115\051\069\076\088\070";"\054\049\088\070\101\103\061\061","\080\081\117\066\054\071\107\109","\117\071\050\067\082\120\089\118\080\105\061\061";"\069\076\085\085\080\074\061\061";"","\116\071\103\071\104\090\085\048\105\109\103\055\087\076\115\118\082\105\061\061";"\049\079\103\057\073\113\117\073\043\117\073\078\099\071\050\102";"\079\072\115\090\069\068\061\061","\107\076\072\085\053\097\073\075","\054\056\102\061";"\053\097\115\051\053\049\072\119\107\079\102\061";"\099\113\116\090\112\087\117\056\043\071\073\097\099\087\120\068\112\103\061\061";"\087\070\115\122\073\048\107\119\105\110\053\055\105\072\075\071\116\068\061\061";"\043\079\089\118\054\104\120\068\049\110\109\097\053\120\073\099\069\068\061\061","\116\109\109\116\112\120\109\051\104\090\074\052\080\097\105\070\107\117\075\061","\082\074\061\061","\043\056\116\088\082\120\109\051\104\088\117\073\080\076\118\114\107\068\061\061";"\080\104\072\109\049\117\050\118\116\076\052\099\099\070\080\057\112\079\103\061","\073\113\073\118\087\109\104\071\116\070\116\067\116\048\066\117";"\107\079\089\065\054\071\102\061";"\107\071\073\072\069\074\061\061";"\053\097\115\086\053\113\089\118\054\081\080\061";"\053\097\088\119\054\097\104\061";"\069\100\099\075\119\050\084\088\103\089\122\099\101\102\056\056\055\121\049\084\103\099\069\115\109\089\084\053\073\088\107\050\113\080\120\054\114\119\116\110\102\122\086\100","\054\097\115\085\107\113\073\070\080\081\109\051\107\068\061\061";"\117\070\116\069\104\081\117\104\116\079\085\119\116\109\053\048\069\049\055\061";"\082\119\074\109\107\077\075\118\082\074\061\061","\104\076\107\076\101\097\107\104\101\088\088\051\087\104\120\086\117\087\099\061","\054\097\117\051"}for u,d in ipairs({{-794906+794907,-696705+696752};{720505-720504;-986203-(-986206)};{-575756+575760;372794-372747}})do while d[620682+-620681]<d[910167+-910165]do R[d[-362709-(-362710)]],R[d[632977+-632975]],d[-894295-(-894296)],d[-275790-(-275792)]=R[d[-327847+327849]],R[d[-368615-(-368616)]],d[-487379+487380]+(-392332+392333),d[-676486+676488]-(-165941+165942)end end local function u(u)return R[u-(-587202+636652)]end do local u=string.sub local d=table.insert local y=string.char local i=R local r=math.floor local p=table.concat local F=type local D=string.len local e={K=-314650+314690,O=679870-679847,N=-85683+85725,U=-602180-(-602213),a=-168699+168705;w=-858858-(-858892);A=505319+-505269,D=-646799-(-646847),["\052"]=-75592-(-75641);Z=-950139+950178,M=565735-565733,["\043"]=-29687-(-29705);["\049"]=-281650-(-281672),F=-755747-(-755799);I=-723396-(-723409),["\047"]=312412-312353;x=522058+-522054,z=-701964-(-701974),h=515819+-515799;V=664618-664567;q=-464399+464406,["\054"]=137325+-137298;["\056"]=839718+-839715,L=504508+-504454,["\057"]=-874486+874543;r=795754+-795696,["\055"]=-134141-(-134197),["\050"]=-512449-(-512450),y=407673-407611,["\053"]=-148925-(-148954);b=637646+-637631;P=-48288+48316;m=529873+-529836,o=-936946-(-936993);G=413713+-413658;k=948936+-948911,E=-381020+381044,f=1044721-1044713,e=129054+-129028,l=-320449-(-320512),H=-866889+866942;u=-903528-(-903549);p=-74999+75029;Q=-555684+555722;t=-660143-(-660160);R=-265511+265525,["\051"]=959853+-959807;c=-720675+720687,j=491328+-491317,i=295727-295711,S=-450420+450464,g=1039507+-1039507,s=772554+-772493;T=-29818+29878,n=776994-776959,B=-934571+934616,W=-604403-(-604422),v=-130910+130951;J=216209+-216177;X=362800+-362795;C=1028109+-1028066,Y=15682-15673,d=434979+-434948,["\048"]=-124091+124127}for R=205529+-205528,#i,911183-911182 do local I=i[R]if F(I)=="\115\116\114\105\110\103"then local F=D(I)local g={}local x=708224+-708223 local l=280421-280421 local B=-722147-(-722147)while x<=F do local R=u(I,x,x)local i=e[R]if i then l=l+i*(1039329-1039265)^((431680-431677)-B)B=B+(-79866-(-79867))if B==-168371+168375 then B=615942+-615942 local R=r(l/(-161793+227329))local u=r((l%(-397259+462795))/(-735027+735283))local i=l%(-317748-(-318004))d(g,y(R,u,i))l=353477-353477 end elseif R=="\061"then d(g,y(r(l/(-182108-(-247644)))))if x>=F or u(I,x+(-510617+510618),x+(420611+-420610))~="\061"then d(g,y(r((l%(1881-(-63655)))/(-614292-(-614548)))))end break end x=x+(-537950+537951)end i[R]=p(g)end end end return(function(R,y,i,r,p,F,D,c,d,g,G,W,t,s,e,J,x,I,a,B,N,l)c,N,B,e,g,J,l,t,G,I,W,x,d,s,a=function(R,u)local y=l(u)local i=function(i,r,p,F,D)return d(R,{i;r,p;F,D},u,y)end return i end,function(R,u)local y=l(u)local i=function()return d(R,{},u,y)end return i end,function(R)local u,d=-669993+669994,R[152246+-152245]while d do I[d],u=I[d]-(-43827+43828),(-97400+97401)+u if-155048-(-155048)==I[d]then I[d],e[d]=nil,nil end d=R[u]end end,{},function()x=x+(-540745-(-540746))I[x]=673929-673928 return x end,function(R,u)local y=l(u)local i=function(...)return d(R,{...},u,y)end return i end,function(R)for u=-921614-(-921615),#R,-765935+765936 do I[R[u]]=I[R[u]]+(268396-268395)end if i then local d=i(true)local y=p(d)y[u(-204919+254386)],y[u(-268767+318246)],y[u(706831-657361)]=R,B,function()return-735310+-519087 end return d else return r({},{[u(-5770+55249)]=B;[u(64613-15146)]=R;[u(672042-622572)]=function()return-567479+-686918 end})end end,function(R)I[R]=I[R]-(-735820+735821)if 118591+-118591==I[R]then I[R],e[R]=nil,nil end end,function(R,u)local y=l(u)local i=function(i)return d(R,{i},u,y)end return i end,{},function(R,u)local y=l(u)local i=function(i,r,p,F)return d(R,{i;r;p;F},u,y)end return i end,-1001968+1001968,function(d,i,r,p)local K,I,E,b,B,T,q,D,x,h,X,l,k,Q,Y,Z,V,m,P,O,L,v,U,C,z,j,S,H,A,o,n,M,f,J while d do if d<9188034-797883 then if d<4040198-(-351887)then if d<2518977-876892 then if d<-225345+1111777 then if d<898452+-482298 then if d<495159-350660 then if d<-230844-(-289202)then L=u(-904121-(-953586))A=u(-501649+551142)d=R[A]k=R[L]A=d(k)d=u(-181101+230582)R[d]=A d=130358+10622715 else V=D v=u(214877-165405)D=R[v]v=u(355536-306068)d=D[v]E=u(532791+-483297)v=g()e[v]=d H=u(-49360+98854)D=R[H]H=u(479901-430430)d=D[H]Z=d S=R[E]H=d d=S and 13479951-717481 or 194345-(-529951)O=S end else d=13956850-1021009 e[x]=D end else if d<-681688+1409022 then d=Z D=O d=O and 11763706-(-826731)or-140621+7214818 else T=-128057-(-128058)k=#m h=193321+-193320 o=B(T,k)T=V(m,o)o=nil k=e[E]X=T-h d=11306238-(-974846)L=v(X)k[T]=L T=nil end end else if d<-183751+1579034 then if d<-852291+2100523 then d=true d=d and 45317+16642160 or 244650+8368345 else Z=Z+S H=Z<=O m=not E H=m and H m=Z>=O m=E and m H=m or H m=3540448-(-995134)d=H and m H=996186+13219386 d=d or H end else if d<1222785-(-225848)then x=e[r[-192500+192503]]O=-33606+33608 l=-172873+172905 I=x%l B=e[r[-756328-(-756332)]]S=-638804-(-638817)v=e[r[-874780-(-874782)]]o=e[r[-793476+793479]]m=o-I o=808874+-808842 E=m/o Z=S-E H=O^Z V=v/H J=B(V)H=-743223-(-743224)B=-656474+4295623770 l=J%B J=377131-377129 B=J^I x=l/B I=nil B=e[r[-286463+286467]]v=x%H H=795875+4294171421 V=v*H J=B(V)B=e[r[234240+-234236]]V=B(x)l=J+V J=-780179-(-845715)O=-549268-(-549524)B=l%J v=-453452+518988 S=1038876+-1038620 V=l-B J=V/v v=-573494-(-573750)V=B%v x=nil H=B-V v=H/O B=nil O=660414-660158 H=J%O Z=J-H O=Z/S J=nil Z={V,v,H;O}l=nil O=nil H=nil e[r[-515192+515193]]=Z V=nil d=-100997+2528186 v=nil else e[x]=Y d=e[x]d=d and 682572+4273686 or 15331235-793715 end end end else if d<1762487-(-838594)then if d<-433154+2870287 then if d<190055+1942835 then if d<1315685-(-473148)then d=true e[r[588169-588168]]=d d=R[u(-537428+586911)]D={}else d=e[r[568216-568206]]x=e[r[446924-446913]]I[d]=x d=e[r[-414621-(-414633)]]x={d(I)}D={y(x)}d=R[u(896483+-846995)]end else l=u(-863210-(-912704))x=R[l]l=u(1042246+-992773)I=x[l]d=R[u(-359470-(-408922))]l=e[r[850904-850903]]x={I(l)}D={y(x)}end else if d<1942643-(-619354)then q=e[x]D=q d=q and 984118+5966623 or 998406+-801985 else x=e[r[-159002-(-159005)]]l=787035+-787034 I=x~=l d=I and 1830504-409351 or-783390+13043211 end end else if d<-1023061+4688091 then if d<3688426-196900 then l=l+J v=not V x=l<=B x=v and x v=l>=B v=V and v x=v or x v=168808+3779233 d=x and v x=2626122-781888 d=d or x else e[x]=q j=e[n]Q=-70757-(-70758)f=j+Q K=P[f]z=S+K K=-418276-(-418532)d=z%K S=d f=e[h]d=265260+12670581 K=E+f f=-216434-(-216690)z=K%f E=z end else if d<3314240-(-907810)then d=e[r[199873-199872]]O=578456-578201 H=-627651+627651 v=d(H,O)x=l d=2742533-(-735084)I[x]=v x=nil else D={}d=R[u(286600-237123)]end end end end else if d<5961043-(-874413)then if d<-463348+6214987 then if d<-872858+5842074 then if d<-830506+5784447 then if d<5681103-968941 then A=u(-739754+789216)M=R[A]H=Z A=u(837953+-788493)Y=M[A]M=Y(I,H)d=999567-(-293673)Y=e[r[721504+-721498]]A=Y()T=M+A o=T+V H=nil T=-882353-(-882609)m=o%T V=m A=1021615+-1021614 T=l[x]M=V+A Y=B[M]o=T..Y l[x]=o else d=D and-879446+16656745 or 11539359-903232 end else d=11982602-131810 end else if d<6122441-732034 then L=g()X=u(722809+-673337)e[L]=Y h=-148012+148112 D=R[X]n=-907945+908200 X=u(-767246-(-816714))d=D[X]X=861903+-861902 D=d(X,h)X=g()h=-223992+223992 e[X]=D d=e[v]D=d(h,n)h=g()e[h]=D U=233372+-223372 C=739072-739071 Q=-673798-(-673798)n=122274+-122273 d=e[v]b=e[X]P=856273+-856271 D=d(n,b)n=g()e[n]=D D=e[v]b=D(C,P)D=-752715-(-752716)d=b==D D=u(-767029+816480)b=g()e[b]=d K=u(-373532-(-423025))P=u(37066-(-12421))z=R[K]f=e[v]j={f(Q,U)}K=z(y(j))z=u(-276212-(-325699))q=K..z d=u(687188+-637696)C=P..q d=o[d]d=d(o,D,C)C=g()P=u(-797765+847220)q=W(914268+12379019,{v;L,Z;l,x;T;b;C,X;n;h;O})e[C]=d D=R[P]P={D(q)}d={y(P)}P=d d=e[b]d=d and 405693+2093079 or 8447351-(-1017188)else v=-66720+66975 H=u(793797-744335)J=293430+35184371795402 d={}e[r[-721430-(-721432)]]=d D=e[r[-622206-(-622209)]]B=D D=x%J e[r[625535-625531]]=D V=x%v v=-683092+683094 J=V+v Z=906623-906622 e[r[713950+-713945]]=J v=R[H]H=u(830367+-780914)V=v[H]v=V(I)O=v V=u(377361-327885)H=35824+-35823 l[x]=V S=Z V=-934301-(-934528)d=452734-(-840506)Z=155366-155366 E=S<Z Z=H-S end end else if d<5953039-(-401144)then if d<404036+5734933 then j=886652+-886650 f=P[j]j=e[C]d=10261769-546406 K=f==j q=K else d=1914338-435697 M=S==E Y=M end else if d<554818+6182973 then d=e[r[209490-209489]]I=i[-645548+645549]l=d x=i[814076-814074]d=l[x]d=d and-749365+14091523 or-162051+5748257 else K=-1017815+1017816 z=P[K]d=3851293-359611 q=z end end end else if d<8443313-472009 then if d<-690229+7918040 then if d<6460287-(-500632)then if d<-132349+7011625 then T=T+L o=T<=k h=not X o=h and o h=T>=k h=X and h o=h or o h=-465653+7769048 d=o and h o=16434649-708056 d=d or o else j=347469+-347468 z=d f=P[j]j=false K=f==j d=K and 628185+5294347 or 423964+9291399 q=K end else Z=u(-144091-(-193555))O=R[Z]D=O d=-730030+13320467 end else if d<7938628-629976 then o=T h=o m[o]=h d=-941974+7809203 o=nil else M=e[x]d=M and 255298+5974515 or 579+1478062 Y=M end end else if d<8149912-(-190161)then if d<-175708+8270603 then l=u(5634+43828)I=i x=g()d=true e[x]=d v=u(347402+-297947)D=R[l]J=g()l=u(-77847-(-127327))d=D[l]l=g()e[l]=d d=W(8921966-371917,{})B=g()e[B]=d d=false e[J]=d H=a(-952763+2730087,{J})V=R[v]v=V(H)D=v d=v and 392067+7982121 or-422969-(-528492)else I=u(479487+-429996)l=307703+-307703 d=R[I]x=e[r[153360-153352]]I=d(x,l)d=8504069-144960 end else if d<8373395-5856 then l=e[r[833222-833213]]d={}x=-652651+652652 I=d B=l l=620994+-620993 J=l l=855212+-855212 V=J<l l=x-J d=2576706-(-900911)else d=-257160-(-362683)V=e[J]D=V end end end end end else if d<12529455-(-71036)then if d<339696+10190135 then if d<8883101-(-791747)then if d<9223061-(-119014)then if d<7971134-(-607492)then if d<9316256-869829 then x=e[r[-81434-(-81436)]]l=-770597+770770 I=x*l x=-544851+1908401902540 D=I+x I=35184371823263-(-265569)d=D%I e[r[595886+-595884]]=d x=-591752+591753 d=-49274+12309095 I=e[r[-647396-(-647399)]]D=I~=x else I=u(47831-(-1625))D=u(-598791-(-648282))d=R[D]D=d(I)D={}d=R[u(-399612-(-449075))]end else D={}d=R[u(-76814+126273)]end else if d<9335410-(-267676)then z=e[x]q=z d=z and 899375+5918269 or 2940731-(-550951)else d=true d=d and-678340+15420399 or 765332+3498183 end end else if d<380606+9923544 then if d<-633740+10669855 then D=q d=z d=-80472+276893 else D=395463+9340139 l=-766876+15904120 x=u(70933-21459)I=x^l d=D-I I=d D=u(-850166-(-899644))d=D/I D={d}d=R[u(-832703+882200)]end else if d<9776630-(-533504)then d=-280345+9899376 else Y=Y+A L=not k D=Y<=M D=L and D L=Y>=M L=k and L D=L or D L=461320+4566321 d=D and L D=-1018327+8358535 d=d or D end end end else if d<153015+11517233 then if d<195741+10844277 then if d<670509+10083371 then if d<10745953-59426 then d=e[r[9268-9261]]d=d and 411714+7895992 or-76525+8435634 else d=-735154+1820301 end else d=R[u(159221-109732)]D={x}end else if d<732990+10437167 then k=u(165464+-115983)d=R[k]k=u(1066068-1016603)R[k]=d d=11234540-481467 else e[r[-233435+233440]]=D d=296432+10339695 I=nil end end else if d<12280551-9045 then if d<-987170+13088484 then T=t(T)V=nil E=nil V=u(233089-183617)d=514537+6352692 m=nil O=t(O)l=t(l)T=948352-948096 Z=t(Z)l=nil x=t(x)J=t(J)v=t(v)Z=g()B=t(B)S=nil x=nil H=nil O=u(-620515-(-669977))o=nil J=R[V]H=u(913621-864127)v=u(-799891-(-849363))V=u(533731-484273)B=J[V]J=g()e[J]=B V=R[v]m={}v=u(-15825+65293)B=V[v]v=R[H]o=527841-527840 H=u(57977-8504)V=v[H]H=R[O]O=u(430431+-380956)E=g()v=H[O]O=g()H=88568-88568 k=T e[O]=H S={}H=903183+-903181 e[Z]=H H={}e[E]=S T=-770896-(-770897)S=-7251+7251 L=T T=517397+-517397 X=L<T T=o-L else x=e[r[237507+-237504]]l=-827554+827724 I=x*l x=-519428+519685 D=I%x e[r[367698-367695]]=D d=2950965-386980 end else if d<13042633-675864 then k=-564883-(-564883)T=#m o=T==k d=o and 14359321-616229 or-674027+1547441 else m=u(-218712+268167)O=g()Z=-111041-(-111044)e[O]=D d=e[v]S=-153750-(-153815)D=d(Z,S)o=W(15696294-(-643278),{})Z=g()e[Z]=D d=-778026-(-778026)S=d D=R[m]m={D(o)}d=-763135+763135 D=-1024231+1024233 E=d d={y(m)}m=d d=m[D]D=u(-697088-(-746570))A=u(-22278+71771)o=d d=R[D]T=e[l]M=R[A]A=M(o)M=u(81319+-31868)Y=T(A,M)T={Y()}D=d(y(T))T=g()e[T]=D d=-330204+10643948 D=41693-41692 Y=e[Z]M=Y Y=645366-645365 A=Y Y=-12383-(-12383)k=A<Y Y=D-A end end end end else if d<14718984-136042 then if d<-702326+14075750 then if d<235998+13056940 then if d<13152296-(-113193)then if d<-22955+12790442 then m=u(-155216-(-204710))d=422110+302186 E=R[m]m=u(-727441+776905)S=E[m]O=S else L=t(L)b=t(b)X=t(X)n=t(n)P=nil h=t(h)C=t(C)d=10384773-71029 end else l=e[r[-325210+325216]]d=-906995+12345208 x=l==I D=x end else if d<-46144+13372981 then J=933655-933653 B=474110-474109 x=e[r[-963530-(-963531)]]l=x(B,J)x=141244+-141243 I=l==x d=I and 637840+4160290 or 222662+15628509 D=I else d=10481620-(-285441)end end else if d<-781876+14806873 then if d<-438132+13931011 then d=true d=d and 613644+15768110 or-648678+16447512 else H=nil T=g()K=nil v=nil k=G(-48235+16661310,{T;O;Z,J})o={}V=nil P=u(-270715-(-320176))X=u(-132261+181730)e[T]=o o=g()B=nil e[o]=k L=g()h={}k={}e[L]=k k=R[X]b=u(-72154+121621)C=e[L]n={[b]=C,[P]=K}X=k(h,n)l=X J=t(J)k=s(59774+6415155,{L,T;E;O;Z;o})Z=t(Z)v=u(-476979-(-526433))m=nil x=k o=t(o)J=u(-459910-(-509406))d=R[u(-984628-(-1034113))]Z=u(-1010196+1059691)E=t(E)S=nil O=t(O)S=618046+18907021243430 B=R[J]T=t(T)V=R[v]L=t(L)O=x(Z,S)H=l[O]D={}x=nil O=u(-504349+553815)O=V[O]l=nil v={O(V,H)}J=B(y(v))B=J()end else if d<535485+13947547 then d=11563362-796301 V=nil v=nil B=nil else d=true d=15362161-(-436673)end end end else if d<16167730-(-44583)then if d<-520127+16313385 then if d<-534511+16262955 then if d<-126418+15162344 then D=u(808481-759000)I=u(598319+-548854)d=R[D]D=R[I]I=u(666754+-617289)R[I]=d I=u(-708873-(-758354))R[I]=D I=e[r[-643622-(-643623)]]d=10547528-928497 x=I()else T=#m k=932933+-932933 o=T==k d=656139-(-217275)end else D=u(-841557-(-891039))B=u(-176498-(-225991))d=R[D]I=e[r[-970852+970856]]l=R[B]H=u(598315+-548860)v=R[H]O=c(518007+9777817,{})H={v(O)}V={y(H)}v=78367-78365 J=V[v]B=l(J)l=u(594362+-544911)x=I(B,l)I={x()}D=d(y(I))I=D x=e[r[-512589+512594]]d=x and 12390949-(-900718)or 10890011-(-548202)D=x end else if d<15638459-(-202217)then d=N(1003233+9306634,{B})M={d()}d=R[u(1019405-969921)]D={y(M)}else x=e[r[-32898-(-32900)]]l=e[r[317410-317407]]I=x==l D=I d=388403+4409727 end end else if d<39150+16506094 then if d<16290758-(-85846)then l=381046+15422507 x=u(642506+-593049)I=x^l D=632110+5176575 d=D-I I=d D=u(421329+-371843)d=D/I D={d}d=R[u(460177-410687)]else d=-823690+1908837 end else if d<988678+15673179 then I=e[r[254936-254935]]D=#I I=-889888+889888 d=D==I d=d and 8341853-(-98261)or 1043114+1384075 else k=-800290+800296 d=e[v]A=260094+-260093 M=d(A,k)d=u(-1012565+1062046)k=u(-210393+259874)R[d]=M A=R[k]k=578738-578736 d=A>k d=d and 388686+-371248 or 11880969-821171 end end end end end end end d=#p return y(D)end,function(R,u)local y=l(u)local i=function(i,r,p)return d(R,{i,r,p},u,y)end return i end,function(R,u)local y=l(u)local i=function(i,r)return d(R,{i,r},u,y)end return i end return(J(8745416-705645,{}))(y(D))end)(getfenv and getfenv()or _ENV,unpack or table[u(876412+-826948)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+--[[ 
+  Shahad Sound Hub - Radio Controller
+  تم إضافة الأكواد الجديدة: ازعاج، اندلس، كداوت، شاورما، امبيه.
+]]
+
+local Players = game:GetService("Players")
+local localPlayer = Players.LocalPlayer
+local spamming = false
+
+-- وظيفة البحث الديناميكي عن الراديو
+local function getRemote()
+    local gui = localPlayer.PlayerGui:FindFirstChild("MountedGui")
+    if gui then
+        for _, v in pairs(gui:GetDescendants()) do
+            if v.Name == "Remote" and v:IsA("RemoteEvent") then return v end
+        end
+    end
+    return nil
+end
+
+-- إنشاء الواجهة
+local sg = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local mainFrame = Instance.new("Frame", sg)
+mainFrame.Size = UDim2.new(0, 450, 0, 40)
+mainFrame.Position = UDim2.new(0.5, -225, 0.1, 0)
+mainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15); mainFrame.Active = true; mainFrame.Draggable = true
+mainFrame.ClipsDescendants = true; Instance.new("UICorner", mainFrame)
+
+-- الهيدر
+local header = Instance.new("Frame", mainFrame)
+header.Size = UDim2.new(1, 0, 0, 40); header.BackgroundColor3 = Color3.fromRGB(138, 43, 226)
+Instance.new("UICorner", header)
+
+local title = Instance.new("TextLabel", header)
+title.Size = UDim2.new(1, -80, 1, 0); title.Position = UDim2.new(0, 10, 0, 0)
+title.Text = "Shahad Sound Hub 🎵"; title.TextColor3 = Color3.new(1, 1, 1)
+title.BackgroundTransparency = 1; title.Font = Enum.Font.FredokaOne; title.TextSize = 18
+
+local minBtn = Instance.new("TextButton", header)
+minBtn.Size = UDim2.new(0, 30, 0, 30); minBtn.Position = UDim2.new(1, -70, 0, 5)
+minBtn.Text = "+"; minBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 40); minBtn.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", minBtn)
+
+local isMinimized = true
+minBtn.MouseButton1Click:Connect(function()
+    isMinimized = not isMinimized
+    mainFrame:TweenSize(isMinimized and UDim2.new(0, 450, 0, 40) or UDim2.new(0, 450, 0, 500), "Out", "Quart", 0.3, true)
+    minBtn.Text = isMinimized and "+" or "-"
+end)
+
+local contentFrame = Instance.new("Frame", mainFrame)
+contentFrame.Size = UDim2.new(1, 0, 0, 460); contentFrame.Position = UDim2.new(0, 0, 0, 40); contentFrame.BackgroundTransparency = 1
+
+-- [ قائمة اللاعبين ]
+local playerList = Instance.new("ScrollingFrame", contentFrame)
+playerList.Size = UDim2.new(0.4, 0, 0.95, 0); playerList.Position = UDim2.new(0.05, 0, 0.02, 0)
+playerList.BackgroundColor3 = Color3.fromRGB(20, 20, 20); playerList.CanvasSize = UDim2.new(0, 0, 5, 0)
+Instance.new("UIListLayout", playerList).Padding = UDim.new(0, 5); Instance.new("UICorner", playerList)
+
+local controlSide = Instance.new("Frame", contentFrame)
+controlSide.Size = UDim2.new(0.45, 0, 0.95, 0); controlSide.Position = UDim2.new(0.5, 0, 0.02, 0); controlSide.BackgroundTransparency = 1
+
+local targetLabel = Instance.new("TextLabel", controlSide)
+targetLabel.Size = UDim2.new(1, 0, 0, 25); targetLabel.Text = "المستهدف: الكل"; targetLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40); targetLabel.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", targetLabel)
+
+local codeInput = Instance.new("TextBox", controlSide)
+codeInput.Size = UDim2.new(1, 0, 0, 40); codeInput.Position = UDim2.new(0, 0, 0.08, 0); codeInput.Text = "140217738705613"
+codeInput.BackgroundColor3 = Color3.fromRGB(30, 30, 30); codeInput.TextColor3 = Color3.new(1,1,1); codeInput.TextScaled = true; Instance.new("UICorner", codeInput)
+
+local selectedTarget = "الكل"
+
+local function fireRemote(target)
+    local currentRemote = getRemote()
+    if not currentRemote then return end
+    if target == "الكل" then
+        for _, p in pairs(Players:GetPlayers()) do currentRemote:FireServer(p, codeInput.Text) end
+    else
+        local p = Players:FindFirstChild(target)
+        if p then currentRemote:FireServer(p, codeInput.Text) end
+    end
+end
+
+local playBtn = Instance.new("TextButton", controlSide)
+playBtn.Size = UDim2.new(1, 0, 0, 35); playBtn.Position = UDim2.new(0, 0, 0.18, 0); playBtn.Text = "تشغيل ▶️"; playBtn.BackgroundColor3 = Color3.fromRGB(0, 150, 0); playBtn.TextColor3 = Color3.new(1, 1, 1); Instance.new("UICorner", playBtn)
+
+local spamBtn = Instance.new("TextButton", controlSide)
+spamBtn.Size = UDim2.new(1, 0, 0, 35); spamBtn.Position = UDim2.new(0, 0, 0.28, 0); spamBtn.Text = "سبام 🚀"; spamBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50); spamBtn.TextColor3 = Color3.new(1, 1, 1); Instance.new("UICorner", spamBtn)
+
+-- [[ مكتبة الموسيقى المحدثة ]]
+local musicLabel = Instance.new("TextLabel", controlSide)
+musicLabel.Size = UDim2.new(1, 0, 0, 20); musicLabel.Position = UDim2.new(0, 0, 0.38, 0); musicLabel.Text = "🎵 مكتبة شهد المحدثة:"; musicLabel.BackgroundTransparency = 1; musicLabel.TextColor3 = Color3.new(1,1,1)
+
+local musicScroll = Instance.new("ScrollingFrame", controlSide)
+musicScroll.Size = UDim2.new(1, 0, 0.55, 0); musicScroll.Position = UDim2.new(0, 0, 0.44, 0)
+musicScroll.BackgroundColor3 = Color3.fromRGB(20, 20, 20); musicScroll.CanvasSize = UDim2.new(0, 0, 3, 0); Instance.new("UICorner", musicScroll)
+local musicListLayout = Instance.new("UIListLayout", musicScroll); musicListLayout.Padding = UDim.new(0, 3)
+
+local songs = {
+    -- الأكواد الأصلية
+    ["kill me 💀"] = "136373350899288",
+    ["cant steal 💎"] = "91214368916078",
+    ["هعهعهع 😂"] = "140669499902711",
+    ["رعب 👻"] = "133594398909422",
+    ["omg hack 💻"] = "121670695729530",
+    ["طننننن 🔊"] = "17070340316",
+    -- الأكواد الجديدة المطلوبة
+    ["ازعاج 📢"] = "7713890963",
+    ["اندلس 🏛️"] = "132039307762001",
+    ["كداوت 💥"] = "139208046340684",
+    ["شاورما 🌯"] = "80487723481385",
+    ["امبيه 😮"] = "7657178494"
+}
+
+for name, id in pairs(songs) do
+    local sBtn = Instance.new("TextButton", musicScroll)
+    sBtn.Size = UDim2.new(1, -5, 0, 35); sBtn.Text = name; sBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 40); sBtn.TextColor3 = Color3.new(1,1,1)
+    sBtn.Font = Enum.Font.SourceSans; sBtn.TextSize = 14; Instance.new("UICorner", sBtn)
+    sBtn.MouseButton1Click:Connect(function()
+        codeInput.Text = id
+        fireRemote(selectedTarget)
+    end)
+end
+
+playBtn.MouseButton1Click:Connect(function() fireRemote(selectedTarget) end)
+spamBtn.MouseButton1Click:Connect(function()
+    spamming = not spamming
+    spamBtn.Text = spamming and "🛑 STOP" or "سبام 🚀"
+    spamBtn.BackgroundColor3 = spamming and Color3.fromRGB(150, 0, 0) or Color3.fromRGB(50, 50, 50)
+    task.spawn(function()
+        while spamming do fireRemote(selectedTarget); task.wait(0.5) end
+    end)
+end)
+
+local function refreshList()
+    for _, child in pairs(playerList:GetChildren()) do if child:IsA("TextButton") then child:Destroy() end end
+    local allBtn = Instance.new("TextButton", playerList)
+    allBtn.Size = UDim2.new(1, -10, 0, 35); allBtn.Text = "الكل (Global)"; allBtn.BackgroundColor3 = Color3.fromRGB(138, 43, 226); allBtn.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", allBtn)
+    allBtn.MouseButton1Click:Connect(function() selectedTarget = "الكل"; targetLabel.Text = "المستهدف: الكل" end)
+    for _, p in pairs(Players:GetPlayers()) do
+        local pBtn = Instance.new("TextButton", playerList)
+        pBtn.Size = UDim2.new(1, -10, 0, 35); pBtn.Text = p.Name; pBtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45); pBtn.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", pBtn)
+        pBtn.MouseButton1Click:Connect(function() selectedTarget = p.Name; targetLabel.Text = "المستهدف: " .. p.Name end)
+    end
+end
+
+refreshList(); Players.PlayerAdded:Connect(refreshList); Players.PlayerRemoving:Connect(refreshList)
