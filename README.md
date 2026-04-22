@@ -1,109 +1,230 @@
---[[ 
-  Shahad Sound Hub - Radio Controller
-  تم إضافة الأكواد الجديدة: ازعاج، اندلس، كداوت، شاورما، امبيه.
-]]
-
 local Players = game:GetService("Players")
-local localPlayer = Players.LocalPlayer
+local TweenService = game:GetService("TweenService")
+local UIS = game:GetService("UserInputService")
+local LP = Players.LocalPlayer
+
 local spamming = false
-
--- وظيفة البحث الديناميكي عن الراديو
-local function getRemote()
-    local gui = localPlayer.PlayerGui:FindFirstChild("MountedGui")
-    if gui then
-        for _, v in pairs(gui:GetDescendants()) do
-            if v.Name == "Remote" and v:IsA("RemoteEvent") then return v end
-        end
-    end
-    return nil
-end
-
--- إنشاء الواجهة
-local sg = Instance.new("ScreenGui", game:GetService("CoreGui"))
-local mainFrame = Instance.new("Frame", sg)
-mainFrame.Size = UDim2.new(0, 450, 0, 40)
-mainFrame.Position = UDim2.new(0.5, -225, 0.1, 0)
-mainFrame.BackgroundColor3 = Color3.fromRGB(15, 15, 15); mainFrame.Active = true; mainFrame.Draggable = true
-mainFrame.ClipsDescendants = true; Instance.new("UICorner", mainFrame)
-
--- الهيدر
-local header = Instance.new("Frame", mainFrame)
-header.Size = UDim2.new(1, 0, 0, 40); header.BackgroundColor3 = Color3.fromRGB(138, 43, 226)
-Instance.new("UICorner", header)
-
-local title = Instance.new("TextLabel", header)
-title.Size = UDim2.new(1, -80, 1, 0); title.Position = UDim2.new(0, 10, 0, 0)
-title.Text = "Shahad Sound Hub 🎵"; title.TextColor3 = Color3.new(1, 1, 1)
-title.BackgroundTransparency = 1; title.Font = Enum.Font.FredokaOne; title.TextSize = 18
-
-local minBtn = Instance.new("TextButton", header)
-minBtn.Size = UDim2.new(0, 30, 0, 30); minBtn.Position = UDim2.new(1, -70, 0, 5)
-minBtn.Text = "+"; minBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 40); minBtn.TextColor3 = Color3.new(1, 1, 1)
-Instance.new("UICorner", minBtn)
-
-local isMinimized = true
-minBtn.MouseButton1Click:Connect(function()
-    isMinimized = not isMinimized
-    mainFrame:TweenSize(isMinimized and UDim2.new(0, 450, 0, 40) or UDim2.new(0, 450, 0, 500), "Out", "Quart", 0.3, true)
-    minBtn.Text = isMinimized and "+" or "-"
-end)
-
-local contentFrame = Instance.new("Frame", mainFrame)
-contentFrame.Size = UDim2.new(1, 0, 0, 460); contentFrame.Position = UDim2.new(0, 0, 0, 40); contentFrame.BackgroundTransparency = 1
-
--- [ قائمة اللاعبين ]
-local playerList = Instance.new("ScrollingFrame", contentFrame)
-playerList.Size = UDim2.new(0.4, 0, 0.95, 0); playerList.Position = UDim2.new(0.05, 0, 0.02, 0)
-playerList.BackgroundColor3 = Color3.fromRGB(20, 20, 20); playerList.CanvasSize = UDim2.new(0, 0, 5, 0)
-Instance.new("UIListLayout", playerList).Padding = UDim.new(0, 5); Instance.new("UICorner", playerList)
-
-local controlSide = Instance.new("Frame", contentFrame)
-controlSide.Size = UDim2.new(0.45, 0, 0.95, 0); controlSide.Position = UDim2.new(0.5, 0, 0.02, 0); controlSide.BackgroundTransparency = 1
-
-local targetLabel = Instance.new("TextLabel", controlSide)
-targetLabel.Size = UDim2.new(1, 0, 0, 25); targetLabel.Text = "المستهدف: الكل"; targetLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40); targetLabel.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", targetLabel)
-
-local codeInput = Instance.new("TextBox", controlSide)
-codeInput.Size = UDim2.new(1, 0, 0, 40); codeInput.Position = UDim2.new(0, 0, 0.08, 0); codeInput.Text = "140217738705613"
-codeInput.BackgroundColor3 = Color3.fromRGB(30, 30, 30); codeInput.TextColor3 = Color3.new(1,1,1); codeInput.TextScaled = true; Instance.new("UICorner", codeInput)
-
 local selectedTarget = "الكل"
 
-local function fireRemote(target)
-    local currentRemote = getRemote()
-    if not currentRemote then return end
-    if target == "الكل" then
-        for _, p in pairs(Players:GetPlayers()) do currentRemote:FireServer(p, codeInput.Text) end
-    else
-        local p = Players:FindFirstChild(target)
-        if p then currentRemote:FireServer(p, codeInput.Text) end
+---
+-- remote
+
+local function getRemote()
+    local gui = LP.PlayerGui:FindFirstChild("MountedGui")
+    if gui then
+        for _,v in pairs(gui:GetDescendants()) do
+            if v.Name=="Remote" and v:IsA("RemoteEvent") then
+                return v
+            end
+        end
     end
 end
 
-local playBtn = Instance.new("TextButton", controlSide)
-playBtn.Size = UDim2.new(1, 0, 0, 35); playBtn.Position = UDim2.new(0, 0, 0.18, 0); playBtn.Text = "تشغيل ▶️"; playBtn.BackgroundColor3 = Color3.fromRGB(0, 150, 0); playBtn.TextColor3 = Color3.new(1, 1, 1); Instance.new("UICorner", playBtn)
+local function fireRemote(target,code)
+    local r = getRemote()
+    if not r then return end
 
-local spamBtn = Instance.new("TextButton", controlSide)
-spamBtn.Size = UDim2.new(1, 0, 0, 35); spamBtn.Position = UDim2.new(0, 0, 0.28, 0); spamBtn.Text = "سبام 🚀"; spamBtn.BackgroundColor3 = Color3.fromRGB(50, 50, 50); spamBtn.TextColor3 = Color3.new(1, 1, 1); Instance.new("UICorner", spamBtn)
+    if target=="الكل" then    
+        for _,p in pairs(Players:GetPlayers()) do    
+            r:FireServer(p,code)    
+        end    
+    else    
+        local p = Players:FindFirstChild(target)    
+        if p then r:FireServer(p,code) end    
+    end
+end
 
--- [[ مكتبة الموسيقى المحدثة ]]
-local musicLabel = Instance.new("TextLabel", controlSide)
-musicLabel.Size = UDim2.new(1, 0, 0, 20); musicLabel.Position = UDim2.new(0, 0, 0.38, 0); musicLabel.Text = "🎵 مكتبة شهد المحدثة:"; musicLabel.BackgroundTransparency = 1; musicLabel.TextColor3 = Color3.new(1,1,1)
+---
+-- GUI
 
-local musicScroll = Instance.new("ScrollingFrame", controlSide)
-musicScroll.Size = UDim2.new(1, 0, 0.55, 0); musicScroll.Position = UDim2.new(0, 0, 0.44, 0)
-musicScroll.BackgroundColor3 = Color3.fromRGB(20, 20, 20); musicScroll.CanvasSize = UDim2.new(0, 0, 3, 0); Instance.new("UICorner", musicScroll)
-local musicListLayout = Instance.new("UIListLayout", musicScroll); musicListLayout.Padding = UDim.new(0, 3)
+pcall(function()
+    game.CoreGui.ShahadSoundHub:Destroy()
+end)
+
+local gui = Instance.new("ScreenGui", game.CoreGui)
+gui.Name = "ShahadSoundHub"
+
+---
+-- 🎧 زر عائم (تحريك سلس ناعم)
+
+local toggle = Instance.new("TextButton", gui)
+toggle.Size = UDim2.new(0, 55, 0, 55)
+toggle.Position = UDim2.new(0.05, 0, 0.4, 0)
+toggle.Text = "🎧"
+toggle.Font = Enum.Font.GothamBold
+toggle.TextSize = 22
+toggle.BackgroundColor3 = Color3.fromRGB(140, 80, 255)
+toggle.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", toggle).CornerRadius = UDim.new(1, 0)
+
+local dragToggle = nil
+local dragStart = nil
+local startPos = nil
+
+local function update(input)
+    local delta = input.Position - dragStart
+    local targetPos = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+    TweenService:Create(toggle, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = targetPos}):Play()
+end
+
+toggle.InputBegan:Connect(function(input)
+    if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+        dragToggle = true
+        dragStart = input.Position
+        startPos = toggle.Position
+        
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragToggle = false
+            end
+        end)
+    end
+end)
+
+UIS.InputChanged:Connect(function(input)
+    if dragToggle and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+        update(input)
+    end
+end)
+
+---
+-- 🟣 اللوحة
+
+local main = Instance.new("Frame", gui)
+main.Size = UDim2.new(0, 420, 0, 450)
+main.Position = UDim2.new(0.5, -210, 0.1, 0)
+main.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+main.BackgroundTransparency = 0.25
+main.Active = true
+main.Draggable = true
+Instance.new("UICorner", main).CornerRadius = UDim.new(0, 16)
+
+local stroke = Instance.new("UIStroke", main)
+stroke.Color = Color3.fromRGB(180, 90, 255)
+stroke.Thickness = 2
+
+local header = Instance.new("Frame", main)
+header.Size = UDim2.new(1, 0, 0, 45)
+header.BackgroundColor3 = Color3.fromRGB(60, 30, 90)
+header.BackgroundTransparency = 0.3
+Instance.new("UICorner", header).CornerRadius = UDim.new(0, 16)
+
+local title = Instance.new("TextLabel", header)
+title.BackgroundTransparency = 1
+title.Size = UDim2.new(1, -10, 1, 0)
+title.Position = UDim2.new(0, 10, 0, 0)
+title.Text = "Shahad Sound Hub 🎵"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 16
+title.TextColor3 = Color3.new(1, 1, 1)
+title.TextXAlignment = Enum.TextXAlignment.Left
+
+local content = Instance.new("Frame", main)
+content.Position = UDim2.new(0, 0, 0, 45)
+content.Size = UDim2.new(1, 0, 0, 405)
+content.BackgroundTransparency = 1
+
+---
+-- open/close
+
+local open = true
+
+toggle.MouseButton1Click:Connect(function()
+    open = not open
+    main.Visible = open
+end)
+
+---
+-- style
+
+local function style(btn, col)
+    btn.BackgroundColor3 = col
+    btn.TextColor3 = Color3.new(1, 1, 1)
+    btn.Font = Enum.Font.GothamBold
+    btn.TextSize = 12
+    Instance.new("UICorner", btn).CornerRadius = UDim.new(0, 10)
+end
+
+---
+-- players
+
+local playerList = Instance.new("ScrollingFrame", content)
+playerList.Size = UDim2.new(0, 120, 0, 330)
+playerList.Position = UDim2.new(0, 10, 0, 10)
+playerList.BackgroundColor3 = Color3.fromRGB(20, 20, 30)
+playerList.ScrollBarThickness = 3
+Instance.new("UICorner", playerList)
+
+local layout = Instance.new("UIListLayout", playerList)
+layout.Padding = UDim.new(0, 4)
+
+---
+-- side
+
+local side = Instance.new("Frame", content)
+side.Position = UDim2.new(0, 140, 0, 10)
+side.Size = UDim2.new(0, 260, 0, 330)
+side.BackgroundTransparency = 1
+
+local label = Instance.new("TextLabel", side)
+label.Size = UDim2.new(1, 0, 0, 28)
+label.Text = "المستهدف: الكل"
+label.BackgroundColor3 = Color3.fromRGB(35, 35, 50)
+label.TextColor3 = Color3.new(1, 1, 1)
+label.Font = Enum.Font.GothamBold
+label.TextSize = 12
+Instance.new("UICorner", label)
+
+local box = Instance.new("TextBox", side)
+box.Size = UDim2.new(1, 0, 0, 32)
+box.Position = UDim2.new(0, 0, 0, 35)
+box.Text = "140217738705613"
+box.BackgroundColor3 = Color3.fromRGB(30, 30, 40)
+box.TextColor3 = Color3.new(1, 1, 1)
+Instance.new("UICorner", box)
+
+local play = Instance.new("TextButton", side)
+play.Size = UDim2.new(1, 0, 0, 30)
+play.Position = UDim2.new(0, 0, 0, 75)
+play.Text = "تشغيل ▶"
+style(play, Color3.fromRGB(0, 170, 100))
+
+local spamBtn = Instance.new("TextButton", side)
+spamBtn.Size = UDim2.new(1, 0, 0, 30)
+spamBtn.Position = UDim2.new(0, 0, 0, 110)
+spamBtn.Text = "سبام 🚀"
+style(spamBtn, Color3.fromRGB(80, 80, 90))
+
+---
+-- 📝 نص "مكتبة شهد :"
+
+local libraryTitle = Instance.new("TextLabel", side)
+libraryTitle.Size = UDim2.new(1, 0, 0, 20)
+libraryTitle.Position = UDim2.new(0, 5, 0, 145)
+libraryTitle.BackgroundTransparency = 1
+libraryTitle.Text = "مكتبة شهد :"
+libraryTitle.TextColor3 = Color3.fromRGB(180, 90, 255)
+libraryTitle.Font = Enum.Font.GothamBold
+libraryTitle.TextSize = 14
+libraryTitle.TextXAlignment = Enum.TextXAlignment.Left
+
+---
+-- songs
+
+local songsFrame = Instance.new("ScrollingFrame", side)
+songsFrame.Size = UDim2.new(1, 0, 0, 160) -- تم تصغير الارتفاع قليلاً لترك مساحة للعنوان
+songsFrame.Position = UDim2.new(0, 0, 0, 170)
+songsFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 35)
+songsFrame.ScrollBarThickness = 3
+Instance.new("UICorner", songsFrame)
 
 local songs = {
-    -- الأكواد الأصلية
     ["kill me 💀"] = "136373350899288",
     ["cant steal 💎"] = "91214368916078",
     ["هعهعهع 😂"] = "140669499902711",
     ["رعب 👻"] = "133594398909422",
     ["omg hack 💻"] = "121670695729530",
     ["طننننن 🔊"] = "17070340316",
-    -- الأكواد الجديدة المطلوبة
     ["ازعاج 📢"] = "7713890963",
     ["اندلس 🏛️"] = "132039307762001",
     ["كداوت 💥"] = "139208046340684",
@@ -111,36 +232,71 @@ local songs = {
     ["امبيه 😮"] = "7657178494"
 }
 
-for name, id in pairs(songs) do
-    local sBtn = Instance.new("TextButton", musicScroll)
-    sBtn.Size = UDim2.new(1, -5, 0, 35); sBtn.Text = name; sBtn.BackgroundColor3 = Color3.fromRGB(40, 40, 40); sBtn.TextColor3 = Color3.new(1,1,1)
-    sBtn.Font = Enum.Font.SourceSans; sBtn.TextSize = 14; Instance.new("UICorner", sBtn)
-    sBtn.MouseButton1Click:Connect(function()
-        codeInput.Text = id
-        fireRemote(selectedTarget)
+local sl = Instance.new("UIListLayout", songsFrame)
+sl.Padding = UDim.new(0, 4)
+
+for n, id in pairs(songs) do
+    local b = Instance.new("TextButton", songsFrame)
+    b.Size = UDim2.new(1, -6, 0, 26)
+    b.Text = n
+    style(b, Color3.fromRGB(60, 60, 85))
+
+    b.MouseButton1Click:Connect(function()    
+        box.Text = id    
+        fireRemote(selectedTarget, id)    
     end)
 end
 
-playBtn.MouseButton1Click:Connect(function() fireRemote(selectedTarget) end)
+---
+-- actions
+
+play.MouseButton1Click:Connect(function()
+    fireRemote(selectedTarget, box.Text)
+end)
+
 spamBtn.MouseButton1Click:Connect(function()
     spamming = not spamming
-    spamBtn.Text = spamming and "🛑 STOP" or "سبام 🚀"
-    spamBtn.BackgroundColor3 = spamming and Color3.fromRGB(150, 0, 0) or Color3.fromRGB(50, 50, 50)
-    task.spawn(function()
-        while spamming do fireRemote(selectedTarget); task.wait(0.5) end
+    spamBtn.Text = spamming and "إيقاف 🛑" or "سبام 🚀"
+
+    task.spawn(function()    
+        while spamming do    
+            fireRemote(selectedTarget, box.Text)    
+            task.wait(0.5)    
+        end    
     end)
 end)
 
-local function refreshList()
-    for _, child in pairs(playerList:GetChildren()) do if child:IsA("TextButton") then child:Destroy() end end
-    local allBtn = Instance.new("TextButton", playerList)
-    allBtn.Size = UDim2.new(1, -10, 0, 35); allBtn.Text = "الكل (Global)"; allBtn.BackgroundColor3 = Color3.fromRGB(138, 43, 226); allBtn.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", allBtn)
-    allBtn.MouseButton1Click:Connect(function() selectedTarget = "الكل"; targetLabel.Text = "المستهدف: الكل" end)
-    for _, p in pairs(Players:GetPlayers()) do
-        local pBtn = Instance.new("TextButton", playerList)
-        pBtn.Size = UDim2.new(1, -10, 0, 35); pBtn.Text = p.Name; pBtn.BackgroundColor3 = Color3.fromRGB(45, 45, 45); pBtn.TextColor3 = Color3.new(1,1,1); Instance.new("UICorner", pBtn)
-        pBtn.MouseButton1Click:Connect(function() selectedTarget = p.Name; targetLabel.Text = "المستهدف: " .. p.Name end)
+---
+-- players refresh
+
+local function refresh()
+    for _, v in pairs(playerList:GetChildren()) do
+        if v:IsA("TextButton") then v:Destroy() end
+    end
+
+    local all = Instance.new("TextButton", playerList)    
+    all.Size = UDim2.new(1, -6, 0, 26)    
+    all.Text = "الكل"    
+    style(all, Color3.fromRGB(120, 50, 220))    
+
+    all.MouseButton1Click:Connect(function()    
+        selectedTarget = "الكل"    
+        label.Text = "المستهدف: الكل"    
+    end)    
+
+    for _, p in pairs(Players:GetPlayers()) do    
+        local b = Instance.new("TextButton", playerList)    
+        b.Size = UDim2.new(1, -6, 0, 26)    
+        b.Text = p.Name    
+        style(b, Color3.fromRGB(45, 45, 60))    
+
+        b.MouseButton1Click:Connect(function()    
+            selectedTarget = p.Name    
+            label.Text = "المستهدف: "..p.Name    
+        end)    
     end
 end
 
-refreshList(); Players.PlayerAdded:Connect(refreshList); Players.PlayerRemoving:Connect(refreshList)
+refresh()
+Players.PlayerAdded:Connect(refresh)
+Players.PlayerRemoving:Connect(refresh)
